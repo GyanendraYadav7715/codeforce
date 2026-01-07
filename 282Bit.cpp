@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>  
 using namespace std;
 
 int main()
@@ -9,11 +10,11 @@ int main()
     int x = 0;
     string statement;
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-
         cin >> statement;
-        if (statement[0] == '+')
+
+        if (statement[1] == '+')
         {
             x += 1;
         }
