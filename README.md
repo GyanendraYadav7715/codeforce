@@ -49,6 +49,7 @@ Problems are organized by **contest number** and **problem code** (e.g., `A`, `B
 | 281A   |Word Capitalization| [View Problem](https://codeforces.com/problemset/problem/281/A) | [Solution]((800)/281-WordCapitalization.cpp) |
 | 791A   |Bear and Big Brother| [View Problem](https://codeforces.com/problemset/problem/791/A) | [Solution]((800)/791BearandBigBrother.cpp) |
 | 617A   |Elephant| [View Problem](https://codeforces.com/problemset/problem/617/A) | [Solution]((800)/617Elephant.cpp) |
+| 266A   |Stones on the Table| [View Problem](https://codeforces.com/problemset/problem/266/A) | [Solution]((800)/StonesontheTable.cpp) |
 ---
 
 ## ✅ How to Use

@@ -1,17 +1,33 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     int ElephantHouseLocation = 0;
-    int ElephantFrinendHouseLoaction;
-    cout << "Hello Mister Elephant plase tell us you firnde house postion" << endl;
-    cin >> ElephantFrinendHouseLoaction;
+    int ElephantFriendHouseLoaction;
+    cin >> ElephantFriendHouseLoaction;
+    int move = 0;
 
-    // elephant can move 1, 2, 3, 4 or 5 positions forward
-
-    
+    if (ElephantFriendHouseLoaction <= 5)
+    {
+        move = 1;
+        cout << move << endl;
+    }
+    else
+    {
+        if (ElephantFriendHouseLoaction % 5 == 0)
+        {
+            move = ElephantFriendHouseLoaction / 5;
+            cout << move << endl;
+        }
+        else
+        {
+            move = (ElephantFriendHouseLoaction / 5) + 1;
+            cout << move << endl;
+        }
+    }
 
     return 0;
 }
