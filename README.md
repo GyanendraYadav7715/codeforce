@@ -52,6 +52,8 @@ Problems are organized by **contest number** and **problem code** (e.g., `A`, `B
 | 266A   |Stones on the Table| [View Problem](https://codeforces.com/problemset/problem/266/A) | [Solution]((800)/StonesontheTable.cpp) |
 | 59A   | Word| [View Problem](https://codeforces.com/problemset/problem/59/A) | [Solution]((800)/59Word.cpp) |
 | 977A   | Wrong Subtraction| [View Problem](https://codeforces.com/problemset/problem/977/A) | [Solution]((800)/977WrongSubtraction.cpp) |
+| 110A   | Nearly Lucky Number| [View Problem](https://codeforces.com/problemset/problem/110/A) | [Solution]((800)/110NearlyLuckyNumber.cpp) |
+| 734A   | Anton and Danik| [View Problem](https://codeforces.com/problemset/problem/734/A) | [Solution]((800)/734AntonandDanik.cpp) |
 ---
 
 ## ✅ How to Use
