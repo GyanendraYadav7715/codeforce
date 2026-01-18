@@ -2,6 +2,28 @@
 #include <string>
 using namespace std;
 
+void danger(string s){
+    //this is more clean readable appproach to solve it
+    int count = 1;
+    bool dangerous = "false";
+
+    for (int i = 1; i < s.length(); i++){
+        if (s[i] == s[i-1]){
+            count++;
+            if(count>=7){
+                dangerous = true;
+                break;
+            }
+        }
+        else
+        {
+            count = 1;
+        }
+    }
+
+    cout << (dangerous ? "YES" : "NO") << endl;
+}
+
 int main()
 {
 
@@ -9,7 +31,6 @@ int main()
     cin >> teamPlayerPostion;
     int teamA = 0;
     int teamB = 0;
-    // 001001
     for (char s : teamPlayerPostion)
     {
         if (s == '1' )
