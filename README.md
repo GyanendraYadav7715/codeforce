@@ -54,6 +54,7 @@ Problems are organized by **contest number** and **problem code** (e.g., `A`, `B
 | 977A   | Wrong Subtraction| [View Problem](https://codeforces.com/problemset/problem/977/A) | [Solution]((800)/977WrongSubtraction.cpp) |
 | 110A   | Nearly Lucky Number| [View Problem](https://codeforces.com/problemset/problem/110/A) | [Solution]((800)/110NearlyLuckyNumber.cpp) |
 | 734A   | Anton and Danik| [View Problem](https://codeforces.com/problemset/problem/734/A) | [Solution]((800)/734AntonandDanik.cpp) |
+| 41A   | Transaltion| [View Problem](https://codeforces.com/problemset/problem/41/A) | [Solution]((800)/41Translation.cpp) |
 ---
 
 ## ✅ How to Use
