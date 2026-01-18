@@ -34,6 +34,15 @@ Problems are organized by **contest number** and **problem code** (e.g., `A`, `B
 
 ## 📝 Problem Index
 
+```
+Difficulty | Rating Range  |Typical Contest Position
+Easy       | 800 — 1200    | "Div. 4 (A-D), Div. 3 (A-C), Div. 2 (A)"
+Medium     | 1300 — 1800   | "Div. 3 (D-F), Div. 2 (B-C), Div. 1 (A)"
+Hard       | 1900 — 2400   | "Div. 2 (D-F), Div. 1 (B-D)"
+Extreme    | 2500+         |  Div. 1 (E-G)
+
+```
+
 | Problmes | Problem Name | Problem Link | Solution |
 |---------|---------|--------------|----------|
 |  4A  |Watermelon | [View Problem](https://codeforces.com/problemset/problem/4/A) | [Solution]((800)/watermelon.cpp) |
