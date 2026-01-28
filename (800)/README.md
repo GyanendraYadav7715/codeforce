@@ -44,10 +44,10 @@ Extreme    | 2500+         |  Div. 1 (E-G)
 |20| 677A   | Vanya and Fence | [View Problem](https://codeforces.com/problemset/problem/677/A) | [Solution](/VanyaandFence.cpp) |
 |21| 271A   | Beautiful Year| [View Problem](https://codeforces.com/problemset/problem/271/A) | [Solution](/BeautifulYear.cpp) |
 |22| 116A   | Tram| [View Problem](https://codeforces.com/problemset/problem/116/A) | [Solution](/Tram.cpp) |
-|23|1030A   |In Search of an Easy Problem | [View Problem](https://codeforces.com/problemset/problem/1030/A) | [Solution](/InSearchofanEasyProblem .cpp) |
+|23|1030A   |In Search of an Easy Problem | [View Problem](https://codeforces.com/problemset/problem/1030/A) | [Solution](/InSearchofanEasyProblem.cpp) |
 |24| 266B   | Queue at the School| [View Problem](https://codeforces.com/problemset/problem/266/B) | [Solution](/QueueattheSchool.cpp) |
 |25| 467A   | George and Accommodation | [View Problem](https://codeforces.com/problemset/problem/467/A) | [Solution](/GeorgeandAccommodation.cpp) |
-|26| 486A   | Calculating Function | [View Problem](https://codeforces.com/problemset/problem/486/A) | [Solution](/CalculatingFunction .cpp) |
+|26| 486A   | Calculating Function | [View Problem](https://codeforces.com/problemset/problem/486/A) | [Solution](/CalculatingFunction.cpp) |
 |27| 344A   | Magnets | [View Problem](https://codeforces.com/problemset/problem/344/A) | [Solution](/Magnets.cpp) |
 |28| 200B  | Drinks| [View Problem](https://codeforces.com/problemset/problem/200/B) | [Solution](/Drinks.cpp) |
 |29| 136A   | Presents | [View Problem](https://codeforces.com/problemset/problem/136/A) | [Solution](/Presents.cpp) |
