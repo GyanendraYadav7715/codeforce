@@ -44,7 +44,7 @@ Extreme    | 2500+         |  Div. 1 (E-G)
 ```
 README.md 
 
-RATING:  [Solution]((800)/README.md) 
+RATING:  [800]((800)/README.md) 
 
 
 ---
