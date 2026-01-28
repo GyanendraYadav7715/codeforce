@@ -1,28 +1,26 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 const int ROWS = 5;
 const int COLS = 5;
+const int target = 1;
 
 int main()
 {
 
-    int matrix[ROWS][COLS];
-    int midPostion = matrix[2][2];
-    int mainpostion[2];
+    int val;
 
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
         {
-            cin >> matrix[i][j];
-            if (matrix[i][j] == 1)
+            cin >> val;
+            if (val == target)
             {
-                mainpostion[0] = i;
-                mainpostion[0] = j;
+                cout << abs(i - 3) + abs(j - 3) << endl;
             }
         }
     }
 
-    
     return 0;
 }
