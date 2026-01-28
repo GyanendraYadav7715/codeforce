@@ -42,28 +42,11 @@ Hard       | 1900 — 2400   | "Div. 2 (D-F), Div. 1 (B-D)"
 Extreme    | 2500+         |  Div. 1 (E-G)
 
 ```
+README.md 
 
-| Problmes | Problem Name | Problem Link | Solution |
-|---------|---------|--------------|----------|
-|  4A  |Watermelon | [View Problem](https://codeforces.com/problemset/problem/4/A) | [Solution]((800)/watermelon.cpp) |
-| 71A    |Way to long| [View Problem](https://codeforces.com/problemset/problem/71/A) | [Solution]((800)/AWayTooLongWord.cpp) |
-| 231A   | Team | [View Problem](https://codeforces.com/problemset/problem/231/A) | [Solution]((800)/Team.cpp) |
-| 282A   |Bit++| [View Problem](https://codeforces.com/problemset/problem/282/A) | [Solution]((800)/282Bit.cpp) |
-|  150A  |Next Round | [View Problem](https://codeforces.com/problemset/problem/150/A) | [Solution]((800)/158NextRound.cpp) |
-| 50A    |Domino Pilling| [View Problem](https://codeforces.com/problemset/problem/50/A) | [Solution]((800)/50Dominopiling.cpp) |
-| 263A   |Beautifull matrix | [View Problem](https://codeforces.com/problemset/problem/263/A) | [Solution]((800)/263BeautifulMatrix.cpp) |
-| 112A   |Petya and Strings| [View Problem](https://codeforces.com/problemset/problem/112/A) | [Solution]((800)/112PetyaandStrings.cpp) |
-|  236A  | Boy or Girl | [View Problem](https://codeforces.com/problemset/problem/236/A) | [Solution]((800)/236BoyorGirl.cpp) |
-| 339A    |Helpful Maths| [View Problem](https://codeforces.com/problemset/problem/339/A) | [Solution]((800)/339HelpfulMaths.cpp) |
-| 281A   |Word Capitalization| [View Problem](https://codeforces.com/problemset/problem/281/A) | [Solution]((800)/281-WordCapitalization.cpp) |
-| 791A   |Bear and Big Brother| [View Problem](https://codeforces.com/problemset/problem/791/A) | [Solution]((800)/791BearandBigBrother.cpp) |
-| 617A   |Elephant| [View Problem](https://codeforces.com/problemset/problem/617/A) | [Solution]((800)/617Elephant.cpp) |
-| 266A   |Stones on the Table| [View Problem](https://codeforces.com/problemset/problem/266/A) | [Solution]((800)/StonesontheTable.cpp) |
-| 59A   | Word| [View Problem](https://codeforces.com/problemset/problem/59/A) | [Solution]((800)/59Word.cpp) |
-| 977A   | Wrong Subtraction| [View Problem](https://codeforces.com/problemset/problem/977/A) | [Solution]((800)/977WrongSubtraction.cpp) |
-| 110A   | Nearly Lucky Number| [View Problem](https://codeforces.com/problemset/problem/110/A) | [Solution]((800)/110NearlyLuckyNumber.cpp) |
-| 734A   | Anton and Danik| [View Problem](https://codeforces.com/problemset/problem/734/A) | [Solution]((800)/734AntonandDanik.cpp) |
-| 41A   | Transaltion| [View Problem](https://codeforces.com/problemset/problem/41/A) | [Solution]((800)/41Translation.cpp) |
+RATING:  [Solution]((800)/README.md) 
+
+
 ---
 
 ## ✅ How to Use
