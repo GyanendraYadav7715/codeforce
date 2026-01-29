@@ -52,6 +52,8 @@ Extreme    | 2500+         |  Div. 1 (E-G)
 |28| 200B  | Drinks| [View Problem](https://codeforces.com/problemset/problem/200/B) | [Solution](Drinks.cpp) |
 |29| 136A   | Presents | [View Problem](https://codeforces.com/problemset/problem/136/A) | [Solution](Presents.cpp) |
 |30| 288A   | Is your horseshoe on the other hoof?  | [View Problem](https://codeforces.com/problemset/problem/288/A) | [Solution](Isyourhorseshoeontheotherhoof.cpp) |
-|31| 61A   | Ultra-Fast Mathematician  | [View Problem](https://codeforces.com/problemset/problem/136/A) | [Solution](UltraFastMathematician.cpp) |
-|32| 705A   | Hulk | [View Problem](https://codeforces.com/problemset/problem/136/A) | [Solution](Hulk.cpp) |
+|31| 61A   | Ultra-Fast Mathematician  | [View Problem](https://codeforces.com/problemset/problem/61/A) | [Solution](UltraFastMathematician.cpp) |
+|32| 705A   | Hulk | [View Problem](https://codeforces.com/problemset/problem/705/A) | [Solution](Hulk.cpp) |
+|33| 1328A   |Divisibility Problem  | [View Problem](https://codeforces.com/problemset/problem/1328/A) | [Solution](DivisibilityProblem.cpp) |
+|34| 520A   | Pangram  | [View Problem](https://codeforces.com/problemset/problem/705/A) | [Solution](Pangram.cpp) |
 ---
