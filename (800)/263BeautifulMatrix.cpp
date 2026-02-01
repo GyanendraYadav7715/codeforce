@@ -1,26 +1,22 @@
 #include <iostream>
-#include <cmath>
+#include <cmath> // For abs()
+
 using namespace std;
-const int ROWS = 5;
-const int COLS = 5;
-const int target = 1;
 
 int main()
 {
-
     int val;
-
-    for (int i = 0; i < ROWS; i++)
+    for (int r = 1; r <= 5; r++)
     {
-        for (int j = 0; j < COLS; j++)
+        for (int c = 1; c <= 5; c++)
         {
             cin >> val;
-            if (val == target)
+            if (val == 1)
             {
-                cout << abs(i - 3) + abs(j - 3) << endl;
+                cout << abs(r - 3) + abs(c - 3) << endl;
+                return 0;
             }
         }
     }
-
     return 0;
 }
