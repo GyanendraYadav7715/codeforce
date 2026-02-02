@@ -1,0 +1,9 @@
+Rating_System:
+  Newbie: ≤ 1199
+  Pupil: 1200–1399
+  Specialist: 1400–1599
+  Expert: 1600–1899
+  Candidate Master: 1900–2099
+  Master / International Master: 2100–2399
+  Grandmaster / International Grandmaster: 2400–2999
+  Legendary Grandmaster: ≥ 3000
