@@ -1,0 +1,21 @@
+import { SortStrategy } from './sort-strategy';
+
+export class SelectionSort implements SortStrategy {
+    sort(arr: number[]): number[] {
+        const result = [...arr];
+
+        for (let i = 0; i < result.length - 1; i++) {
+            let minIndex = i;
+
+            for (let j = i + 1; j < result.length; j++) {
+                if (result[j] < result[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            [result[i], result[minIndex]] = [result[minIndex], result[i]];
+        }
+
+        return result;
+    }
+}
