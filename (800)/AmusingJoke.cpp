@@ -1,27 +1,20 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
-// Helper function to avoid repeating the loop 3 times
-int getAsciiSum(string s)
-{
-    int sum = 0;
-    for (int i = 0; i < s.length(); i++)
-    {
-        sum += (int)s[i];
-    }
-    return sum;
-}
-
 int main()
 {
-    string a, b, c;
+    string guest, host, pile;
+    cin >> guest >> host >> pile;
 
-    if (!(cin >> a >> b >> c))
-        return 0;
+    string combined = guest + host;
 
-    if (getAsciiSum(a) + getAsciiSum(b) == getAsciiSum(c))
+    sort(combined.begin(), combined.end());
+    sort(pile.begin(), pile.end());
+
+    if (combined == pile)
     {
         cout << "YES" << endl;
     }
