@@ -1,0 +1,173 @@
+Has_A_Relationship_Composition:
+
+  Why_To_Learn:
+    - Promotes loose coupling
+    - Encourages modular design
+    - Preferred over inheritance in many real systems
+    - Core principle in Spring Boot architecture
+    - Improves flexibility and maintainability
+
+  Clear_Definition:
+    Meaning: "Has-A relationship occurs when one class contains a reference of another class."
+    Concept: "One object uses another object as part of its state."
+    Keywords:
+      - Object reference
+      - Composition
+      - Aggregation (variant)
+
+  Basic_Syntax:
+    Code: |
+      class Engine {
+          void start() {
+              System.out.println("Engine started");
+          }
+      }
+
+      class Car {
+
+          private Engine engine;  // Has-A relationship
+
+          Car() {
+              engine = new Engine();
+          }
+
+          void drive() {
+              engine.start();
+              System.out.println("Car is moving");
+          }
+      }
+
+  Core_Concept:
+
+    Parent_Object:
+      - Contains reference of another object
+
+    Contained_Object:
+      - Performs specific task
+      - Used by parent object
+
+    Relationship_Type:
+      - Car HAS-A Engine
+
+  JVM_Internal_Process:
+
+    Code: |
+      Car car = new Car();
+
+    Step_1_Class_Loading:
+      - Engine class loaded into Method Area
+      - Car class loaded into Method Area
+
+    Step_2_Object_Creation:
+      Heap:
+        - Car object created
+        - Engine object created
+
+    Step_3_Reference_Storage:
+      Stack:
+        - car variable holds reference to Car object
+      Heap:
+        Car_Object:
+          engine -> reference to Engine object
+
+    Final_Memory_Model:
+      - Two separate objects in Heap
+      - One object stores reference to another
+
+  Memory_Visualization:
+    Stack:
+      car -> (Car object address)
+
+    Heap:
+      Car_Object:
+        engine -> (Engine object address)
+      Engine_Object:
+        no internal references
+
+  Real_Life_Example:
+
+    Computer_System:
+      Computer HAS-A:
+        - CPU
+        - RAM
+        - HardDisk
+
+    University_System:
+      University HAS-A:
+        - Departments
+        - Students
+
+  Spring_Boot_Usage:
+
+    Service_And_Repository:
+      Code: |
+        @Service
+        public class UserService {
+
+            @Autowired
+            private UserRepository userRepository;
+
+            public User save(User user) {
+                return userRepository.save(user);
+            }
+        }
+
+      Explanation:
+        - UserService HAS-A UserRepository
+        - Service uses repository
+        - Loose coupling via dependency injection
+
+    Order_Service_Example:
+      Code: |
+        @Service
+        public class OrderService {
+
+            private PaymentService paymentService;
+
+            public OrderService(PaymentService paymentService) {
+                this.paymentService = paymentService;
+            }
+
+            public void placeOrder() {
+                paymentService.pay(1000);
+            }
+        }
+
+      Concept:
+        - OrderService HAS-A PaymentService
+        - Implementation can change without modifying OrderService
+
+  Composition_vs_Inheritance:
+
+    Inheritance_Is_A:
+      - Strong coupling
+      - Child depends on parent structure
+      - Uses extends
+
+    Composition_Has_A:
+      - Loose coupling
+      - Object collaboration
+      - Uses object references
+      - Preferred in modern architecture
+
+  Advantages:
+    - Flexible design
+    - Replaceable components
+    - Better modularity
+    - Easier testing
+    - Supports dependency injection
+
+  Disadvantages:
+    - Slightly more boilerplate code
+    - Requires proper dependency management
+
+  Engineering_Principle:
+    Recommended_Rule:
+      "Favor Composition over Inheritance"
+
+  Interview_Point:
+    Question: "What is Has-A relationship?"
+    Answer: "It is a composition relationship where one class contains a reference to another class."
+
+  One_Line_Summary:
+    "Has-A relationship represents composition where one object contains and uses another object to achieve functionality."

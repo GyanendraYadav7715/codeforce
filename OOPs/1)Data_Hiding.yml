@@ -1,0 +1,85 @@
+1)Data Hiding:
+      concept: Data hiding is the practise of restricting direct access to class variables by making them private and providing controlled access through methods.
+
+      feature:
+            It protects system integrity.
+            It prevents accidental corruption of data.
+            It enforces business rules.
+            It makes large systems stable.
+            It improves security.
+
+      apply: We use private to hide variables then we expose controlled access via getter
+           setter,and custom methods.
+
+      summary: Data Hiding protects internal object state by restricting direct access and allowing controlled modification.
+       
+        
+Java_Object_Creation_Flow:
+
+  Step_1_Class_Loading:
+    Trigger: "When JVM encounters Person class for first time"
+    Process:
+      - ClassLoader loads Person.class file
+      - Bytecode is read
+      - Class metadata stored in Method Area
+    Method_Area_Contains:
+      - Class name: Person
+      - Field definitions:
+          - name: age
+            type: int
+            access_modifier: private
+      - Method definitions
+      - Runtime constant pool
+      - Access flags
+    Object_Created: false
+    Purpose: "Stores blueprint, not actual object"
+
+  Step_2_Object_Creation:
+    Trigger: "new Person()"
+    Process:
+      - JVM checks if class already loaded
+      - Memory allocated in Heap
+      - Default values assigned
+    Heap_Object:
+      Object_Type: Person
+      Fields:
+        age: 0
+    Object_Created: true
+    Purpose: "Creates real instance in memory"
+
+  Step_3_Reference_Assignment:
+    Code: "Person p = new Person();"
+    Stack:
+      Variable_Name: p
+      Type: reference
+      Points_To: "Heap memory address of Person object"
+    Purpose: "Stack holds reference, not object"
+
+  Step_4_Field_Storage:
+    Location: Heap
+    Behavior:
+      - Each object has separate copy of fields
+      - Memory allocated per object
+    Example:
+      p1:
+        age: 0
+      p2:
+        age: 0
+
+  Step_5_Access_Control_Enforcement:
+    Access_Modifier: private
+    Compile_Time_Check:
+      - Compiler verifies accessibility
+      - Direct access outside class: error
+    Runtime_Check:
+      - JVM bytecode verifier checks access flags
+    Protection_Level:
+      - Compile time safety
+      - Runtime bytecode verification
+
+Memory_Model_Summary:
+  Method_Area: "Class blueprint and metadata"
+  Heap: "Actual objects and field values"
+  Stack: "Method calls and references"
+  Access_Modifiers: "Security guard controlling field access"
+

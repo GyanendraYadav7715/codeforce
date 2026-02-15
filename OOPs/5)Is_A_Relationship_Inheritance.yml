@@ -1,0 +1,177 @@
+Is_A_Relationship_Inheritance:
+
+  Why_To_Learn:
+    - Enables code reuse
+    - Supports runtime polymorphism
+    - Reduces duplication
+    - Allows hierarchical design
+    - Core concept in framework development
+    - Frequently asked in interviews
+
+  Clear_Definition:
+    Meaning: "Is-A relationship occurs when one class extends another class."
+    Keyword_Used: extends
+    Concept: "Child class inherits properties and behaviors of parent class."
+
+  Basic_Syntax:
+    Code: |
+      class Animal {
+          void eat() {
+              System.out.println("Eating...");
+          }
+      }
+
+      class Dog extends Animal {
+          void bark() {
+              System.out.println("Barking...");
+          }
+      }
+
+  Core_Concept:
+
+    Parent_Class:
+      - Provides common properties
+      - Provides common behavior
+
+    Child_Class:
+      - Inherits parent members
+      - Can add new behavior
+      - Can override methods
+
+  Object_Creation_Flow:
+
+    Code: |
+      Dog d = new Dog();
+
+    JVM_Process:
+      Step_1:
+        - Animal class loaded into Method Area
+      Step_2:
+        - Dog class loaded into Method Area
+      Step_3:
+        - Memory allocated in Heap for Dog object
+      Step_4:
+        - Parent constructor executes first
+      Step_5:
+        - Child constructor executes
+      Final_Object:
+        - Single object containing:
+            - Parent fields
+            - Child fields
+
+  Memory_Visualization:
+    Heap_Object:
+      Type: Dog
+      Contains:
+        - Animal properties
+        - Dog properties
+
+  Method_Overriding_Example:
+
+    Code: |
+      class Animal {
+          void sound() {
+              System.out.println("Animal sound");
+          }
+      }
+
+      class Dog extends Animal {
+          @Override
+          void sound() {
+              System.out.println("Bark");
+          }
+      }
+
+      public class Main {
+          public static void main(String[] args) {
+              Animal a = new Dog();
+              a.sound();
+          }
+      }
+
+    Output: "Bark"
+
+    Explanation:
+      - Reference type: Animal
+      - Object type: Dog
+      - JVM uses Dynamic Method Dispatch
+      - Method resolved at runtime
+
+  Runtime_Polymorphism:
+    Enabled_By: Inheritance
+    Resolution_Time: Runtime
+    Mechanism: Dynamic Method Dispatch
+
+  Real_Life_Example:
+
+    Person_Hierarchy:
+      Parent: Person
+      Children:
+        - Student
+        - Teacher
+      Concept:
+        - Student is a Person
+        - Teacher is a Person
+
+  Spring_Boot_Usage:
+
+    Base_Entity_Example:
+      Code: |
+        @MappedSuperclass
+        public class BaseEntity {
+
+            private LocalDateTime createdAt;
+            private LocalDateTime updatedAt;
+
+        }
+
+        @Entity
+        public class User extends BaseEntity {
+
+            private String username;
+        }
+
+      Benefit:
+        - Common audit fields reused
+        - Avoids duplication
+
+    Exception_Hierarchy:
+      Example:
+        - RuntimeException
+        - CustomBusinessException extends RuntimeException
+      Purpose:
+        - Structured error handling
+
+  Advantages:
+    - Code reusability
+    - Extensibility
+    - Cleaner hierarchy
+    - Supports polymorphism
+
+  Disadvantages:
+    - Tight coupling
+    - Can lead to fragile base class problem
+    - Overuse makes system rigid
+
+  Important_Rules:
+    - Java supports single inheritance (one parent class)
+    - Multiple inheritance allowed via interfaces
+    - Parent constructor runs before child constructor
+    - Private members are NOT inherited (but accessible via methods)
+
+  Difference_From_Has_A:
+    Is_A:
+      - Uses extends
+      - Represents inheritance
+      - Strong coupling
+    Has_A:
+      - Uses object reference
+      - Represents composition
+      - Looser coupling
+
+  Interview_Point:
+    Question: "What is Is-A relationship?"
+    Answer: "It is inheritance where one class extends another class to reuse properties and behaviors."
+
+  One_Line_Summary:
+    "Is-A relationship allows a child class to inherit properties and behaviors of a parent class using inheritance."

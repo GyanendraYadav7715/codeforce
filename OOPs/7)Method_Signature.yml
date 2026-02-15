@@ -1,0 +1,164 @@
+Method_Signature:
+
+  Why_To_Learn:
+    - Required for method overloading
+    - Important for polymorphism
+    - Critical for compiler behavior understanding
+    - Frequently asked in interviews
+    - Helps avoid method ambiguity errors
+
+  Clear_Definition:
+    Meaning: "Method Signature = Method Name + Parameter List"
+    Important:
+      - Return type is NOT part of method signature
+      - Access modifier is NOT part of method signature
+      - Parameter order matters
+      - Parameter type matters
+
+  Structure:
+    Syntax: |
+      returnType methodName(parameterType parameterName)
+
+    Signature_Component:
+      - methodName
+      - parameterType_list
+
+  Basic_Example:
+
+    Valid_Overloading:
+      Code: |
+        class Calculator {
+
+            void add(int a) {}
+
+            void add(int a, int b) {}
+
+            void add(double a, double b) {}
+        }
+
+      Explanation:
+        - Same method name
+        - Different parameter lists
+        - Different signatures
+
+    Invalid_Overloading:
+      Code: |
+        class Calculator {
+
+            int add(int a) { return a; }
+
+            double add(int a) { return a; }  // Compilation Error
+        }
+
+      Reason:
+        - Same method name
+        - Same parameter list
+        - Only return type different
+        - NOT allowed
+
+  Compiler_Level_Process:
+
+    Step_1:
+      - Compiler reads method name
+      - Compiler checks parameter types
+      - Compiler builds method signature table
+
+    Step_2:
+      - If duplicate signature found → compile-time error
+
+    Step_3:
+      - Compiler stores method signature in class metadata
+
+    Important:
+      - Overloading resolved at compile-time
+      - Called Compile-Time Polymorphism
+
+  JVM_Internal_Working:
+
+    During_Class_Loading:
+      - Method metadata stored in Method Area
+      - Signature stored as:
+          method_name + descriptor
+        Example:
+          add(int) -> add(I)V
+          add(double,double) -> add(DD)V
+
+    During_Method_Call:
+      - JVM uses method signature to locate correct method
+      - Exact match found in method table
+
+  Parameter_Order_Importance:
+
+    Code: |
+      void print(int a, String b) {}
+      void print(String b, int a) {}
+
+    Explanation:
+      - Different order
+      - Different signature
+      - Allowed
+
+  Spring_Boot_Usage:
+
+    Controller_Methods:
+      Code: |
+        @GetMapping("/users")
+        public List<User> getUsers() {}
+
+        @GetMapping("/users/{id}")
+        public User getUserById(@PathVariable Long id) {}
+
+      Explanation:
+        - Same method name possible
+        - Different parameters
+        - Framework resolves based on signature
+
+    Service_Overloading:
+      Code: |
+        public User findUser(Long id) {}
+        public User findUser(String email) {}
+
+      Benefit:
+        - Flexible API design
+        - Clean method naming
+
+  Overloading_vs_Overriding:
+
+    Overloading:
+      - Same class
+      - Different method signature
+      - Compile-time resolution
+
+    Overriding:
+      - Inheritance required
+      - Same method signature
+      - Runtime resolution
+
+  Interview_Points:
+
+    Question_1:
+      Q: "Is return type part of method signature?"
+      A: "No"
+
+    Question_2:
+      Q: "What defines uniqueness of method?"
+      A: "Method name + parameter list"
+
+  Memory_Model:
+
+    Method_Area:
+      - Stores method signatures
+      - Stores bytecode
+      - Stores access flags
+
+    Stack:
+      - Method call creates stack frame
+      - Arguments passed according to signature
+
+  Common_Mistakes:
+    - Thinking return type matters
+    - Confusing overloading with overriding
+    - Ignoring parameter order
+
+  One_Line_Summary:
+    "Method Signature is defined by method name and parameter list, and it determines method uniqueness in a class."
