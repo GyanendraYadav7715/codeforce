@@ -2,41 +2,41 @@
 #include <vector>
 using namespace std;
 
-int getOddPart(int n)
-{
-    while (n % 2 == 0)
-    {
-        n /= 2;
-    }
-    return n;
-}
-
 void solve(){
     int n;
     cin >> n;
 
     vector<int> a(n);
-    bool possible = true;
-
+ 
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
+        
+     }
 
-        if (getOddPart(a[i]) != getOddPart(i + 1))
-        {
-            possible = false;
-        }
+     for (int i = 1; i <= n; i+=2)
+     {
+         if(i%2!=0 && a[i-1]%2==0)
+         {
+             cout << "NO";
+             return;
+         }
+     }
+
+     for (int i = 2; i <= n; i += 2)
+     {
+         if (i % 2 == 0 && a[i - 1] % 2 != 0)
+         {
+             cout << "NO";
+             return;
+         }
+     }
+
+     cout << "YES";
     }
 
-    if (possible)
-    {
-        cout << "YES" << endl;
-    }
-    else
-    {
-        cout << "NO" << endl;
-    }
-}
+  
+
 
 int main(){
 
@@ -45,6 +45,7 @@ int main(){
 
     while(t--){
         solve();
+        cout << "\n";
     }
 
     return 0;
