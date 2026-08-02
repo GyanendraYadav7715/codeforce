@@ -21,10 +21,24 @@ int main()
             b.push_back(a[i]);
         }
 
+        if (k == 1)
+        {
+            cout << "YES\n";
+            continue;
+        }
+
         sort(b.begin(), b.end());
-        int lim = b[k - 1]; // k-th smallest value
+
+        // (k-1)-th smallest value (1-indexed)
+        int x = b[k - 2];
+
+        int totalX = 0;
+        for (int v : a)
+            if (v == x)
+                totalX++;
 
         int l = 0, r = n - 1;
+        int deletedX = 0;
         bool ok = true;
 
         while (l < r)
@@ -34,13 +48,23 @@ int main()
                 l++;
                 r--;
             }
-            else if (a[l] >= lim)
+            else if (a[l] > x)
             {
-                l++; // delete left
+                l++;
             }
-            else if (a[r] >= lim)
+            else if (a[r] > x)
             {
-                r--; // delete right
+                r--;
+            }
+            else if (a[l] == x)
+            {
+                deletedX++;
+                l++;
+            }
+            else if (a[r] == x)
+            {
+                deletedX++;
+                r--;
             }
             else
             {
@@ -48,6 +72,10 @@ int main()
                 break;
             }
         }
+
+        // Need at least (k-1) elements <= x remaining
+        if (totalX - deletedX < 1)
+            ok = false;
 
         cout << (ok ? "YES" : "NO") << '\n';
     }
